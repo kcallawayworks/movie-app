@@ -12,3 +12,6 @@
 
 # actor = Actor.new(first_name: "Pink", last_name: "Panther", known_for: "Pink Panther")
 # actor.save
+
+# movie = Movie.new(name: "Simple Jack", year: 2008, plot: "POW camp")
+# movie.save

@@ -1,12 +1,16 @@
 class Api::ActorsController < ApplicationController
 
-  def index
-    # we need to call the info
-    @actors = Actor.all
-    render 'index.json.jbuilder'
-  end
-
 end
+
+# class Api::ActorsController < ApplicationController
+
+#   def movie_index
+#     # we need to call the info
+#     @movies = Movie.all
+#     render 'all_movie.json.jbuilder'
+#   end
+
+# end
 
 
 
@@ -18,3 +22,9 @@ end
 #   end
 
 # end
+
+  # def index
+  #   # we need to call the info
+  #   @actors = Actor.all
+  #   render 'index.json.jbuilder'
+  # end

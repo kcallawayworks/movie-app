@@ -3,10 +3,26 @@ Rails.application.routes.draw do
   # verb "/urls" => "namespace/controllers#action"
   namespace :api do
 
-  get "/actors" => "actors#index"
+  # get "/actors" => "actors#index"
+  # end
+
+
   end
 end
 
+# # This works
+#     get "/movies" => "actors#movie_index"
+# Rails.application.routes.draw do
+#   # STEP 1: A ROUTE triggers a controller action
+#   # verb "/urls" => "namespace/controllers#action"
+#   namespace :api do
+
+#   # get "/actors" => "actors#index"
+#   # end
+
+#     get "/movies" => "actors#movie_index"
+#   end
+# end
 
 # This works
 # Rails.application.routes.draw do
