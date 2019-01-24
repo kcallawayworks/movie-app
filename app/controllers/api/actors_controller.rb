@@ -1,5 +1,10 @@
 class Api::ActorsController < ApplicationController
 
+  def one_movie
+    @movie = Movie.first
+    render 'one_movie.json.jbuilder'
+  end
+
 end
 
 # class Api::ActorsController < ApplicationController
@@ -9,6 +14,11 @@ end
 #     @movies = Movie.all
 #     render 'all_movie.json.jbuilder'
 #   end
+
+  # def one_actor
+  #   @actor = Actor.first
+  #   render 'one_actor.json.jbuilder'
+  # end
 
 # end
 

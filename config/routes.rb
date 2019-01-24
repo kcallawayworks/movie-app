@@ -3,9 +3,7 @@ Rails.application.routes.draw do
   # verb "/urls" => "namespace/controllers#action"
   namespace :api do
 
-  # get "/actors" => "actors#index"
-  # end
-
+  get "/movie" => "actors#one_movie"
 
   end
 end
@@ -16,13 +14,7 @@ end
 #   # STEP 1: A ROUTE triggers a controller action
 #   # verb "/urls" => "namespace/controllers#action"
 #   namespace :api do
-
-#   # get "/actors" => "actors#index"
-#   # end
-
-#     get "/movies" => "actors#movie_index"
-#   end
-# end
+  
 
 # This works
 # Rails.application.routes.draw do
@@ -31,7 +23,12 @@ end
 #   get "/actor_url" => "api/actors#actor_method"
 # end
 
+#   # get "/actors" => "actors#index"
+#   # end
 
+#     get "/movies" => "actors#movie_index"
+#   end
+# end
 
 
 # Done Using the rails console:
