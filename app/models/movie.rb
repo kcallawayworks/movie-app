@@ -1,13 +1,14 @@
 
 class Movie < ApplicationRecord
-  # validates :first_name, :last_name length: { minimum: 2 }
-  # validates :known_for, presence: true
-  # validates :age { greater_than: 13 }
+  validates :title, presence: true, :title, length: { minimum: 3 }
 
   belongs_to :movie
 
-
-  # validates :first_name, :last_name length: { minimum: 2 }
-  # validates :known_for, presence: true
-  # validates :age { greater_than: 0 }
+  def movie_sad_path
+    if @movie.save
+      render 'show.json.jbuilder'
+    else
+      render json: {errors:@movie.errors.full_messages}, status: :unprocessible_entity
+    end
+  end
 end

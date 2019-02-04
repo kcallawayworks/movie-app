@@ -1,11 +1,15 @@
 class Api::MoviesController < ApplicationController
 
-  def index 
-    @movies = Movie.all
-    render 'index.json.jbuilder'
+  # def index 
+  #   @movies = Movie.all
+  #   render 'index.json.jbuilder'
+  # end
+
+  def index
+  @movies = Movie.where(english: true)
+  render "index.json.jbuilder"
   end
 
-  
 end
 
 #   def create

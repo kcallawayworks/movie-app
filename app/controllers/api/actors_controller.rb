@@ -1,4 +1,4 @@
-class Api::ActorsController < ApplicationController
+ class Api::ActorsController < ApplicationController
 
   def index 
     @actors = Actor.all.order(age: :desc)
@@ -19,6 +19,8 @@ class Api::ActorsController < ApplicationController
     # else
     #   render json: {errors: @product.errors.full_messages}, status: :unprocessable_entity
     end
+
+
   end
 
   # def show
