@@ -1,5 +1,1 @@
-json.id @movie.id
-json.id @movie.title
-json.id @movie.year
-json.id @movie.plot
-json.id @movie.director
+json.partial! "movie.json.jbuilder", movie: @movie
